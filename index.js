@@ -29,7 +29,7 @@ bot.on('message', msg=>{
             msg.channel.send('Fetching Status')
             
             
-            ping('54.39.13.157', 25613, (error, respond) =>{
+            ping('//Minecraft Server ip goes here', //Minecraft Server port goes here, (error, respond) =>{
                 if(error) msg.channel.send('<@191377462632906752> The server is offline :(')
             
                 ;
@@ -47,7 +47,7 @@ bot.on('message', msg=>{
 
                 const Embed = new Discord.MessageEmbed()
                 .setTitle('Server Status')
-                .addField('Server IP', '54.39.13.157:25613')
+                .addField('Server IP', '//Minecraft Server ip goes here')
                 .addField('Server Verison', respond.version)
                 .addField('Online Players', respond.onlinePlayers)
                 .addField('Players', players)
